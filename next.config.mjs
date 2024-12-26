@@ -1,5 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  experimental: {
+    serverActions: {
+      allowedOrigins: [
+      'localhost:3000',
+      'https://jubilant-broccoli-g47jjvr75rjpf9q56-3000.app.github.dev/',
+      ],
+    },
+  },
   images: {
     remotePatterns: [
       {

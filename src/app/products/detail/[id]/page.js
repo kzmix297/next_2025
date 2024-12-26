@@ -1,6 +1,7 @@
 "use client";
 import { activateProduct, getProductDraft } from "@/app/actions";
 import DownloadImages from "@/components/ButtonDownloadImage";
+import WhatsAppButton from "@/components/ButtonWhatsapp";
 import CarouselApp from "@/components/image/carousel";
 
 import { useEffect, useState } from "react";
@@ -43,6 +44,7 @@ export default function DetailProduct({ params }) {
         </p>
         <p className="text-lg text-black">{product.description}</p>
         <DownloadImages imageUrls={product.image} />
+        <WhatsAppButton phoneNumber="6287814657055" />
       </div>
     </div>
   );
